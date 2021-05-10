@@ -8,7 +8,7 @@ app_name="CICD_Example"
 # Copy here properties from New GitHib Actions Runner
 actions_installer_url="https://github.com/actions/runner/releases/download/v2.277.1/actions-runner-linux-x64-2.277.1.tar.gz"
 git_repo_url="https://github.com/SiemensIndustrialEdgeITA/CI_CD_GitHubActions_ExampleApp"
-git_runner_token="AIGDZWSYY4VQLTYZV3VUTKLATDXGG"
+git_runner_token="AIGDZWWUQYAVMQHZWJSM7W3ATEGXA"
 
 #############################################################
 # START
