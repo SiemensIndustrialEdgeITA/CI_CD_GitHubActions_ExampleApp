@@ -392,3 +392,72 @@ Date: Mon, 10 May 2021 11:36:36 GMT
 [2021-05-10 11:42:55Z INFO JobDispatcher] job renew has been canceled, stop renew job request 9.
 [2021-05-10 11:42:55Z INFO JobNotification] Entering JobCompleted Notification
 [2021-05-10 11:42:55Z INFO JobNotification] Entering EndMonitor
+[2021-05-10 11:45:08Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/edge/Desktop/Workshop_Siemens_IE_App_Development_2021_05_10/CI_CD_GitHubActions_ExampleApp/CI_CD/actions-runner/.credentials_rsaparams
+[2021-05-10 11:45:08Z INFO MessageListener] Message '9' received from session '3ce0d9f2-def4-403f-b112-d14082f6607e'.
+[2021-05-10 11:45:08Z INFO JobDispatcher] Job request 10 for plan 2f63ba1c-2296-4775-8bcd-390bd599fbae job ca395085-040a-526b-2ce8-bdc85f692774 received.
+[2021-05-10 11:45:08Z INFO JobDispatcher] Pull OrchestrationId 2f63ba1c-2296-4775-8bcd-390bd599fbae.build.__default from JWT claims
+[2021-05-10 11:45:08Z INFO JobDispatcher] Job request e07742bd-189a-5079-918b-43f8b2f94b89 processed succeed.
+[2021-05-10 11:45:08Z INFO Terminal] WRITE LINE: 2021-05-10 11:45:08Z: Running job: build
+[2021-05-10 11:45:08Z INFO JobDispatcher] Start renew job request 10 for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2021-05-10 11:45:09Z INFO JobDispatcher] Successfully renew job request 10, job is valid till 5/10/2021 11:55:11 AM
+[2021-05-10 11:45:09Z INFO HostContext] Well known directory 'Bin': '/home/edge/Desktop/Workshop_Siemens_IE_App_Development_2021_05_10/CI_CD_GitHubActions_ExampleApp/CI_CD/actions-runner/bin'
+[2021-05-10 11:45:09Z INFO ProcessInvokerWrapper] Starting process:
+[2021-05-10 11:45:09Z INFO ProcessInvokerWrapper]   File name: '/home/edge/Desktop/Workshop_Siemens_IE_App_Development_2021_05_10/CI_CD_GitHubActions_ExampleApp/CI_CD/actions-runner/bin/Runner.Worker'
+[2021-05-10 11:45:09Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 103 107'
+[2021-05-10 11:45:09Z INFO ProcessInvokerWrapper]   Working directory: '/home/edge/Desktop/Workshop_Siemens_IE_App_Development_2021_05_10/CI_CD_GitHubActions_ExampleApp/CI_CD/actions-runner/bin'
+[2021-05-10 11:45:09Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2021-05-10 11:45:09Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2021-05-10 11:45:09Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2021-05-10 11:45:09Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-05-10 11:45:09Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2021-05-10 11:45:09Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-05-10 11:45:09Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2021-05-10 11:45:09Z INFO ProcessInvokerWrapper] Process started with process id 30092, waiting for process exit.
+[2021-05-10 11:45:09Z INFO JobDispatcher] Send job request message to worker for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2021-05-10 11:45:09Z INFO JobNotification] Entering JobStarted Notification
+[2021-05-10 11:45:09Z INFO JobNotification] Entering StartMonitor
+[2021-05-10 11:46:09Z INFO JobDispatcher] Successfully renew job request 10, job is valid till 5/10/2021 11:56:11 AM
+[2021-05-10 11:46:14Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-10 11:46:14Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-10 11:46:14Z INFO ProcessInvokerWrapper] Finished process 30092 with exit code 100, and elapsed time 00:01:05.4809577.
+[2021-05-10 11:46:14Z INFO JobDispatcher] Worker finished for job ca395085-040a-526b-2ce8-bdc85f692774. Code: 100
+[2021-05-10 11:46:14Z INFO JobDispatcher] finish job request for job ca395085-040a-526b-2ce8-bdc85f692774 with result: Succeeded
+[2021-05-10 11:46:14Z INFO Terminal] WRITE LINE: 2021-05-10 11:46:14Z: Job build completed with result: Succeeded
+[2021-05-10 11:46:14Z INFO JobDispatcher] Stop renew job request for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2021-05-10 11:46:14Z INFO JobDispatcher] job renew has been canceled, stop renew job request 10.
+[2021-05-10 11:46:14Z INFO JobNotification] Entering JobCompleted Notification
+[2021-05-10 11:46:14Z INFO JobNotification] Entering EndMonitor
+[2021-05-10 11:46:21Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/edge/Desktop/Workshop_Siemens_IE_App_Development_2021_05_10/CI_CD_GitHubActions_ExampleApp/CI_CD/actions-runner/.credentials_rsaparams
+[2021-05-10 11:46:21Z INFO MessageListener] Message '10' received from session '3ce0d9f2-def4-403f-b112-d14082f6607e'.
+[2021-05-10 11:46:21Z INFO JobDispatcher] Job request 11 for plan 2f63ba1c-2296-4775-8bcd-390bd599fbae job e07742bd-189a-5079-918b-43f8b2f94b89 received.
+[2021-05-10 11:46:21Z INFO JobDispatcher] Pull OrchestrationId 2f63ba1c-2296-4775-8bcd-390bd599fbae.deploy.__default from JWT claims
+[2021-05-10 11:46:21Z INFO JobDispatcher] Job request ca395085-040a-526b-2ce8-bdc85f692774 processed succeed.
+[2021-05-10 11:46:21Z INFO Terminal] WRITE LINE: 2021-05-10 11:46:21Z: Running job: deploy
+[2021-05-10 11:46:21Z INFO JobDispatcher] Start renew job request 11 for job e07742bd-189a-5079-918b-43f8b2f94b89.
+[2021-05-10 11:46:22Z INFO JobDispatcher] Successfully renew job request 11, job is valid till 5/10/2021 11:56:24 AM
+[2021-05-10 11:46:22Z INFO HostContext] Well known directory 'Bin': '/home/edge/Desktop/Workshop_Siemens_IE_App_Development_2021_05_10/CI_CD_GitHubActions_ExampleApp/CI_CD/actions-runner/bin'
+[2021-05-10 11:46:22Z INFO ProcessInvokerWrapper] Starting process:
+[2021-05-10 11:46:22Z INFO ProcessInvokerWrapper]   File name: '/home/edge/Desktop/Workshop_Siemens_IE_App_Development_2021_05_10/CI_CD_GitHubActions_ExampleApp/CI_CD/actions-runner/bin/Runner.Worker'
+[2021-05-10 11:46:22Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 103 107'
+[2021-05-10 11:46:22Z INFO ProcessInvokerWrapper]   Working directory: '/home/edge/Desktop/Workshop_Siemens_IE_App_Development_2021_05_10/CI_CD_GitHubActions_ExampleApp/CI_CD/actions-runner/bin'
+[2021-05-10 11:46:22Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2021-05-10 11:46:22Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2021-05-10 11:46:22Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2021-05-10 11:46:22Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-05-10 11:46:22Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2021-05-10 11:46:22Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-05-10 11:46:22Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2021-05-10 11:46:22Z INFO ProcessInvokerWrapper] Process started with process id 30322, waiting for process exit.
+[2021-05-10 11:46:22Z INFO JobDispatcher] Send job request message to worker for job e07742bd-189a-5079-918b-43f8b2f94b89.
+[2021-05-10 11:46:22Z INFO JobNotification] Entering JobStarted Notification
+[2021-05-10 11:46:22Z INFO JobNotification] Entering StartMonitor
+[2021-05-10 11:46:29Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-10 11:46:29Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-10 11:46:29Z INFO ProcessInvokerWrapper] Finished process 30322 with exit code 102, and elapsed time 00:00:07.7841667.
+[2021-05-10 11:46:29Z INFO JobDispatcher] Worker finished for job e07742bd-189a-5079-918b-43f8b2f94b89. Code: 102
+[2021-05-10 11:46:29Z INFO JobDispatcher] finish job request for job e07742bd-189a-5079-918b-43f8b2f94b89 with result: Failed
+[2021-05-10 11:46:29Z INFO Terminal] WRITE LINE: 2021-05-10 11:46:29Z: Job deploy completed with result: Failed
+[2021-05-10 11:46:29Z INFO JobDispatcher] Stop renew job request for job e07742bd-189a-5079-918b-43f8b2f94b89.
+[2021-05-10 11:46:29Z INFO JobDispatcher] job renew has been canceled, stop renew job request 11.
+[2021-05-10 11:46:29Z INFO JobNotification] Entering JobCompleted Notification
+[2021-05-10 11:46:29Z INFO JobNotification] Entering EndMonitor

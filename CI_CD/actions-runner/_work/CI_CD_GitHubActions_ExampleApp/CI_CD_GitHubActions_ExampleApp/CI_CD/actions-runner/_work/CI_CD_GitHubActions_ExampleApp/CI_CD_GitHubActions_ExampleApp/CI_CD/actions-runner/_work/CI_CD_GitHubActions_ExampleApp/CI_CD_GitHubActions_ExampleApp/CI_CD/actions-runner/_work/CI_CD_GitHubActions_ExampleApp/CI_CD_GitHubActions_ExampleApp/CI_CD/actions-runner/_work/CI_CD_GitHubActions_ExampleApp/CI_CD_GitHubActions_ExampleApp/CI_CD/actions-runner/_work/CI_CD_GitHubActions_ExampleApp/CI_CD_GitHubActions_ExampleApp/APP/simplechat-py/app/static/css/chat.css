@@ -1,0 +1,17 @@
+#main {
+    margin-top: 30px;
+}
+  
+.messages {
+    height: 400px;
+    background: #eee;
+    padding: 15px;
+    overflow: auto;
+    margin: 20px 0;
+}
+
+.messages ul {
+    list-style: none;
+    margin: 0;
+    margin-bottom: 5px;
+}
