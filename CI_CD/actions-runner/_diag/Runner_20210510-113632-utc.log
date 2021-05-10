@@ -530,3 +530,107 @@ Date: Mon, 10 May 2021 11:36:36 GMT
 [2021-05-10 11:53:02Z INFO JobDispatcher] job renew has been canceled, stop renew job request 13.
 [2021-05-10 11:53:02Z INFO JobNotification] Entering JobCompleted Notification
 [2021-05-10 11:53:02Z INFO JobNotification] Entering EndMonitor
+[2021-05-10 12:00:46Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/edge/Desktop/Workshop_Siemens_IE_App_Development_2021_05_10/CI_CD_GitHubActions_ExampleApp/CI_CD/actions-runner/.credentials_rsaparams
+[2021-05-10 12:00:46Z INFO MessageListener] Message '13' received from session '3ce0d9f2-def4-403f-b112-d14082f6607e'.
+[2021-05-10 12:00:46Z INFO JobDispatcher] Job request 14 for plan 3953ebc7-7b37-482c-8662-b4710359cca6 job ca395085-040a-526b-2ce8-bdc85f692774 received.
+[2021-05-10 12:00:46Z INFO JobDispatcher] Pull OrchestrationId 3953ebc7-7b37-482c-8662-b4710359cca6.build.__default from JWT claims
+[2021-05-10 12:00:46Z INFO JobDispatcher] Job request e07742bd-189a-5079-918b-43f8b2f94b89 processed succeed.
+[2021-05-10 12:00:46Z INFO Terminal] WRITE LINE: 2021-05-10 12:00:46Z: Running job: build
+[2021-05-10 12:00:46Z INFO JobDispatcher] Start renew job request 14 for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2021-05-10 12:00:46Z INFO JobDispatcher] Successfully renew job request 14, job is valid till 5/10/2021 12:10:48 PM
+[2021-05-10 12:00:46Z INFO HostContext] Well known directory 'Bin': '/home/edge/Desktop/Workshop_Siemens_IE_App_Development_2021_05_10/CI_CD_GitHubActions_ExampleApp/CI_CD/actions-runner/bin'
+[2021-05-10 12:00:46Z INFO ProcessInvokerWrapper] Starting process:
+[2021-05-10 12:00:46Z INFO ProcessInvokerWrapper]   File name: '/home/edge/Desktop/Workshop_Siemens_IE_App_Development_2021_05_10/CI_CD_GitHubActions_ExampleApp/CI_CD/actions-runner/bin/Runner.Worker'
+[2021-05-10 12:00:46Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 103 107'
+[2021-05-10 12:00:46Z INFO ProcessInvokerWrapper]   Working directory: '/home/edge/Desktop/Workshop_Siemens_IE_App_Development_2021_05_10/CI_CD_GitHubActions_ExampleApp/CI_CD/actions-runner/bin'
+[2021-05-10 12:00:46Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2021-05-10 12:00:46Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2021-05-10 12:00:46Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2021-05-10 12:00:46Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-05-10 12:00:46Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2021-05-10 12:00:46Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-05-10 12:00:46Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2021-05-10 12:00:46Z INFO ProcessInvokerWrapper] Process started with process id 32353, waiting for process exit.
+[2021-05-10 12:00:46Z INFO JobDispatcher] Send job request message to worker for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2021-05-10 12:00:46Z INFO JobNotification] Entering JobStarted Notification
+[2021-05-10 12:00:46Z INFO JobNotification] Entering StartMonitor
+[2021-05-10 12:01:46Z INFO JobDispatcher] Successfully renew job request 14, job is valid till 5/10/2021 12:11:48 PM
+[2021-05-10 12:02:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-10 12:02:38Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-10 12:02:38Z INFO ProcessInvokerWrapper] Finished process 32353 with exit code 100, and elapsed time 00:01:52.4336182.
+[2021-05-10 12:02:38Z INFO JobDispatcher] Worker finished for job ca395085-040a-526b-2ce8-bdc85f692774. Code: 100
+[2021-05-10 12:02:38Z INFO JobDispatcher] finish job request for job ca395085-040a-526b-2ce8-bdc85f692774 with result: Succeeded
+[2021-05-10 12:02:38Z INFO Terminal] WRITE LINE: 2021-05-10 12:02:38Z: Job build completed with result: Succeeded
+[2021-05-10 12:02:38Z INFO JobDispatcher] Stop renew job request for job ca395085-040a-526b-2ce8-bdc85f692774.
+[2021-05-10 12:02:38Z INFO JobDispatcher] job renew has been canceled, stop renew job request 14.
+[2021-05-10 12:02:38Z INFO JobNotification] Entering JobCompleted Notification
+[2021-05-10 12:02:38Z INFO JobNotification] Entering EndMonitor
+[2021-05-10 12:02:44Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/edge/Desktop/Workshop_Siemens_IE_App_Development_2021_05_10/CI_CD_GitHubActions_ExampleApp/CI_CD/actions-runner/.credentials_rsaparams
+[2021-05-10 12:02:44Z INFO MessageListener] Message '14' received from session '3ce0d9f2-def4-403f-b112-d14082f6607e'.
+[2021-05-10 12:02:44Z INFO JobDispatcher] Job request 15 for plan 3953ebc7-7b37-482c-8662-b4710359cca6 job e07742bd-189a-5079-918b-43f8b2f94b89 received.
+[2021-05-10 12:02:44Z INFO JobDispatcher] Pull OrchestrationId 3953ebc7-7b37-482c-8662-b4710359cca6.deploy.__default from JWT claims
+[2021-05-10 12:02:44Z INFO JobDispatcher] Job request ca395085-040a-526b-2ce8-bdc85f692774 processed succeed.
+[2021-05-10 12:02:44Z INFO Terminal] WRITE LINE: 2021-05-10 12:02:44Z: Running job: deploy
+[2021-05-10 12:02:44Z INFO JobDispatcher] Start renew job request 15 for job e07742bd-189a-5079-918b-43f8b2f94b89.
+[2021-05-10 12:02:45Z INFO JobDispatcher] Successfully renew job request 15, job is valid till 5/10/2021 12:12:47 PM
+[2021-05-10 12:02:45Z INFO HostContext] Well known directory 'Bin': '/home/edge/Desktop/Workshop_Siemens_IE_App_Development_2021_05_10/CI_CD_GitHubActions_ExampleApp/CI_CD/actions-runner/bin'
+[2021-05-10 12:02:45Z INFO ProcessInvokerWrapper] Starting process:
+[2021-05-10 12:02:45Z INFO ProcessInvokerWrapper]   File name: '/home/edge/Desktop/Workshop_Siemens_IE_App_Development_2021_05_10/CI_CD_GitHubActions_ExampleApp/CI_CD/actions-runner/bin/Runner.Worker'
+[2021-05-10 12:02:45Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 103 107'
+[2021-05-10 12:02:45Z INFO ProcessInvokerWrapper]   Working directory: '/home/edge/Desktop/Workshop_Siemens_IE_App_Development_2021_05_10/CI_CD_GitHubActions_ExampleApp/CI_CD/actions-runner/bin'
+[2021-05-10 12:02:45Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2021-05-10 12:02:45Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2021-05-10 12:02:45Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2021-05-10 12:02:45Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2021-05-10 12:02:45Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2021-05-10 12:02:45Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2021-05-10 12:02:45Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2021-05-10 12:02:45Z INFO ProcessInvokerWrapper] Process started with process id 32661, waiting for process exit.
+[2021-05-10 12:02:45Z INFO JobDispatcher] Send job request message to worker for job e07742bd-189a-5079-918b-43f8b2f94b89.
+[2021-05-10 12:02:45Z INFO JobNotification] Entering JobStarted Notification
+[2021-05-10 12:02:45Z INFO JobNotification] Entering StartMonitor
+[2021-05-10 12:03:45Z INFO JobDispatcher] Successfully renew job request 15, job is valid till 5/10/2021 12:13:47 PM
+[2021-05-10 12:04:45Z INFO JobDispatcher] Successfully renew job request 15, job is valid till 5/10/2021 12:14:47 PM
+[2021-05-10 12:04:49Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-10 12:04:49Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2021-05-10 12:04:49Z INFO ProcessInvokerWrapper] Finished process 32661 with exit code 100, and elapsed time 00:02:04.7893877.
+[2021-05-10 12:04:49Z INFO JobDispatcher] Worker finished for job e07742bd-189a-5079-918b-43f8b2f94b89. Code: 100
+[2021-05-10 12:04:49Z INFO JobDispatcher] finish job request for job e07742bd-189a-5079-918b-43f8b2f94b89 with result: Succeeded
+[2021-05-10 12:04:49Z INFO Terminal] WRITE LINE: 2021-05-10 12:04:49Z: Job deploy completed with result: Succeeded
+[2021-05-10 12:04:49Z INFO JobDispatcher] Stop renew job request for job e07742bd-189a-5079-918b-43f8b2f94b89.
+[2021-05-10 12:04:49Z INFO JobDispatcher] job renew has been canceled, stop renew job request 15.
+[2021-05-10 12:04:49Z INFO JobNotification] Entering JobCompleted Notification
+[2021-05-10 12:04:49Z INFO JobNotification] Entering EndMonitor
+[2021-05-10 12:32:02Z WARN GitHubActionsService] Authentication failed with status code 401.
+WWW-Authenticate: Bearer
+Strict-Transport-Security: max-age=2592000
+X-TFS-ProcessId: a3ef4eab-0ba9-42ca-8a46-be6ff7dafe88
+ActivityId: ab970c72-9e3c-49ba-ab2d-5fd154129d53
+X-TFS-Session: a715fc8b-603e-4402-bcb6-a6b555f1eed0
+X-VSS-E2EID: cfde68da-3812-427a-9630-91612855967d
+X-VSS-SenderDeploymentId: ac98198d-4d34-0364-420d-bafa6e51dce2
+X-TFS-ServiceError: The+user+%27System%3aPublicAccess%3baaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27+is+not+authorized+to+access+this+resource.
+X-VSS-S2STargetService: 0000005A-0000-8888-8000-000000000000/visualstudio.com
+X-MSEdge-Ref: Ref A: 3736B1ED3FB4416BAAFC647960B05726 Ref B: MIL30EDGE0811 Ref C: 2021-05-10T12:32:03Z
+Date: Mon, 10 May 2021 12:32:02 GMT
+
+[2021-05-10 12:32:02Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/edge/Desktop/Workshop_Siemens_IE_App_Development_2021_05_10/CI_CD_GitHubActions_ExampleApp/CI_CD/actions-runner/.credentials_rsaparams
+[2021-05-10 12:32:03Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2021-05-10 12:32:53Z INFO MessageListener] No message retrieved from session '3ce0d9f2-def4-403f-b112-d14082f6607e' within last 30 minutes.
+[2021-05-10 13:02:59Z INFO MessageListener] No message retrieved from session '3ce0d9f2-def4-403f-b112-d14082f6607e' within last 30 minutes.
+[2021-05-10 13:27:14Z WARN GitHubActionsService] Authentication failed with status code 401.
+WWW-Authenticate: Bearer
+Strict-Transport-Security: max-age=2592000
+X-TFS-ProcessId: a3ef4eab-0ba9-42ca-8a46-be6ff7dafe88
+ActivityId: abfbcc95-9e3c-49ba-ab2d-5fd154129d53
+X-TFS-Session: a715fc8b-603e-4402-bcb6-a6b555f1eed0
+X-VSS-E2EID: 9a7e5cbf-de13-4cd7-bd1a-6b034a57f403
+X-VSS-SenderDeploymentId: ac98198d-4d34-0364-420d-bafa6e51dce2
+X-TFS-ServiceError: The+user+%27System%3aPublicAccess%3baaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27+is+not+authorized+to+access+this+resource.
+X-VSS-S2STargetService: 0000005A-0000-8888-8000-000000000000/visualstudio.com
+X-MSEdge-Ref: Ref A: 16814D6642684AE6BF1F3F6FE023AF69 Ref B: MIL30EDGE0811 Ref C: 2021-05-10T13:27:16Z
+Date: Mon, 10 May 2021 13:27:15 GMT
+
+[2021-05-10 13:27:14Z INFO RSAFileKeyManager] Loading RSA key parameters from file /home/edge/Desktop/Workshop_Siemens_IE_App_Development_2021_05_10/CI_CD_GitHubActions_ExampleApp/CI_CD/actions-runner/.credentials_rsaparams
+[2021-05-10 13:27:15Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2021-05-10 13:33:06Z INFO MessageListener] No message retrieved from session '3ce0d9f2-def4-403f-b112-d14082f6607e' within last 30 minutes.
