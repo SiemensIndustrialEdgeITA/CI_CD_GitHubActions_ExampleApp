@@ -1,0 +1,44 @@
+version: '2.4'
+
+services:
+    simplechat-py:
+        container_name: simplechat-py
+        image: simplechat-py:0.0.1
+        restart: unless-stopped
+        environment:
+            MONGODB_HOSTNAME: simplechat-mongodb
+            MONGODB_DATABASE: simplechat
+            MQTT_ADDRESS: ie-databus
+            MQTT_PORT: 1883
+            MQTT_USER: simplechat
+            MQTT_PASSWORD: simplechat
+            MQTT_ROOT_TOPIC: simplechat
+        ports:
+            - 55000:5000
+        depends_on:
+            - simplechat-mongodb
+        links:
+            - simplechat-mongodb
+        mem_limit: 250m
+        networks:
+            - proxy-redirect            # default IE network
+
+    simplechat-mongodb:
+        image: mongo:4.0.8
+        container_name: simplechat-mongodb
+        restart: unless-stopped
+        environment:
+            MONGODB_DATABASE: simplechat
+        volumes:
+            - simplechat-data:/data/db
+        mem_limit: 300m
+        networks:
+            - proxy-redirect            # default IE network  
+
+volumes:
+    simplechat-data:
+
+networks:
+    proxy-redirect:
+        name: proxy-redirect
+        external: true
