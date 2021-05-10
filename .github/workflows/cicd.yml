@@ -4,7 +4,7 @@ on:
   # Triggers the workflow on push or pull request events but only for the main branch
   # CHANGE TO YOUR BRANCH
   push:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
@@ -17,8 +17,8 @@ jobs:
         run: |
           cd APP
           docker-compose build
-          
-  deploy: 
+
+  deploy:
     runs-on: self-hosted
     needs: [build]
     steps:
@@ -28,8 +28,8 @@ jobs:
           mkdir workspace
           cd workspace
           ie-app-publisher-linux ws init   
-          cd ..      
-          
+          cd ..
+
       - name: Uploading app to IEM
         run: |
           echo "Uploading to IEM"
