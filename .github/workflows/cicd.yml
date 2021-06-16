@@ -38,10 +38,21 @@ jobs:
           ie-app-publisher-linux de c -u http://localhost:2375
           export IE_SKIP_CERTIFICATE=true
           ie-app-publisher-linux em li -u ${{secrets.IEM_URL}} -e ${{secrets.USER_NAME}} -p ${{secrets.PSWD}}
+  
 
-          version=$(ie-app-publisher-linux em app dt -a ${{secrets.APP_ID}} -p | \
-                  python3 -c "import sys, json; print(json.load(sys.stdin)['versions'][0]['versionNumber'])")
-
+          app_details=$(ie-app-publisher-linux em app dt -a ${{secrets.APP_ID}} -p)
+          app_details="${app_details//false/0}"   
+          app_details="${app_details//true/1}"   
+          py_find_version=$(cat <<END
+          import sys, json;
+          if len(dict($app_details)['versions']) > 0:
+              print(dict($app_details)['versions'][0]['versionNumber'])
+          else:
+              print('')
+          END
+          )
+          version="$(python3 -c "$py_find_version")"
+          
           if [ -z "$version" ]
           then
               version_new=0.0.1
@@ -52,6 +63,7 @@ jobs:
               echo 'Update with new Version: '$version_new
           fi
           
+
           ie-app-publisher-linux em app cuv -a ${{secrets.APP_ID}} -v $new_version -y ./docker-compose-prod.yml \
                 -n '{"simplechat-py":[{"name":"simplechat-py","protocol":"HTTP","port":"5000","headers":"","rewriteTarget":"/"}]}' \
                 -s 'simplechat-py' -t 'FromBoxReverseProxy' -u "simplechat-py" -r "/"
