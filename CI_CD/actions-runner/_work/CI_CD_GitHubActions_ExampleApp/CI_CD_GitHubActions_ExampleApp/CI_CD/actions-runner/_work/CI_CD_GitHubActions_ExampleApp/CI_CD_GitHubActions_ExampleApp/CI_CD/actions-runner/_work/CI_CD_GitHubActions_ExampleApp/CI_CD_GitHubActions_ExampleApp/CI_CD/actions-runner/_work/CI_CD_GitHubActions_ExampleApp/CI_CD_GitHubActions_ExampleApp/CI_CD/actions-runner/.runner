@@ -1,9 +1,0 @@
-﻿{
-  "agentId": 28,
-  "agentName": "devvm",
-  "poolId": 1,
-  "poolName": "Default",
-  "serverUrl": "https://pipelines.actions.githubusercontent.com/hdNHEu0sfqqgx7Nr29BrOialpboOVIAqWjiEvo0RHIHrFAd8PX",
-  "gitHubUrl": "https://github.com/SiemensIndustrialEdgeITA/CI_CD_GitHubActions_ExampleApp",
-  "workFolder": "_work"
-}

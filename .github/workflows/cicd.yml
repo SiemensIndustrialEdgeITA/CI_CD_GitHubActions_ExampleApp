@@ -40,11 +40,17 @@ jobs:
           ie-app-publisher-linux em li -u ${{secrets.IEM_URL}} -e ${{secrets.USER_NAME}} -p ${{secrets.PSWD}}
 
           version=$(ie-app-publisher-linux em app dt -a ${{secrets.APP_ID}} -p | \
-            python3 -c "import sys, json; print(json.load(sys.stdin)['versions'][0]['versionNumber'])")
-          echo 'old Version: '$version
+                  python3 -c "import sys, json; print(json.load(sys.stdin)['versions'][0]['versionNumber'])")
 
-          new_version=$(echo $version | awk -F. -v OFS=. 'NF==1{print ++$NF}; NF>1{if(length($NF+1)>length($NF))$(NF-1)++; $NF=sprintf("%0*d", length($NF), ($NF+1)%(10^length($NF))); print}')
-          echo 'new Version: '$new_version
-
+          if [ -z "$version" ]
+          then
+              version_new=0.0.1
+              echo'First version of application created : '$version_new
+          else
+              echo 'Detected Application old Version: '$version
+              version_new=$(echo $version | awk -F. -v OFS=. 'NF==1{print ++$NF}; NF>1{if(length($NF+1)>length($NF))$(NF-1)++; $NF=sprintf("%0*d", length($NF), ($NF+1)%(10^length($NF))); print}')
+              echo 'Update with new Version: '$version_new
+          fi
+          
           ie-app-publisher-linux em app cuv -a ${{secrets.APP_ID}} -v $new_version -y ./docker-compose-prod.yml -n '{"simplechat-py":[{"name":"simplechat-py","protocol":"HTTP","port":"5000","headers":"","rewriteTarget":"/"}]}' -s 'simplechat-py' -t 'FromBoxReverseProxy' -u "simplechat-py" -r "/"
           ie-app-publisher-linux em app uuv -a ${{secrets.APP_ID}} -v $new_version
