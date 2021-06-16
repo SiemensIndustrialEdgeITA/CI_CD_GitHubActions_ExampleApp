@@ -16,7 +16,8 @@ app = Flask(__name__)
 config = {
     'app': {
         'title': 'SimpleChat',
-        'description': 'Simple chat using Python Flask, MongoDB and Paho MQTT.'
+        'description': 'Simple chat using Python Flask, MongoDB and Paho MQTT.',
+        'version': "0.0.1"
     },
     'mqtt':{
         'roottopic': os.environ['MQTT_ROOT_TOPIC'],
