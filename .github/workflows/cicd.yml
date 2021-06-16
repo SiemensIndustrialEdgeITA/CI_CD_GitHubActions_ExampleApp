@@ -52,7 +52,7 @@ jobs:
           END
           )
           version="$(python3 -c "$py_find_version")"
-          
+
           if [ -z "$version" ]
           then
               version_new=0.0.1
@@ -64,7 +64,5 @@ jobs:
           fi
           
 
-          ie-app-publisher-linux em app cuv -a ${{secrets.APP_ID}} -v $new_version -y ./docker-compose-prod.yml \
-                -n '{"simplechat-py":[{"name":"simplechat-py","protocol":"HTTP","port":"5000","headers":"","rewriteTarget":"/"}]}' \
-                -s 'simplechat-py' -t 'FromBoxReverseProxy' -u "simplechat-py" -r "/"
+          ie-app-publisher-linux em app cuv -a ${{secrets.APP_ID}} -v $new_version -y ./docker-compose-prod.yml -n '{"simplechat-py":[{"name":"simplechat-py","protocol":"HTTP","port":"5000","headers":"","rewriteTarget":"/"}]}' -s 'simplechat-py' -t 'FromBoxReverseProxy' -u "simplechat-py" -r "/"
           ie-app-publisher-linux em app uuv -a ${{secrets.APP_ID}} -v $new_version
